@@ -1,3 +1,5 @@
+package day02;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -6,8 +8,8 @@ import java.util.List;
 public class Main {
     
     public static void main(String[] args){
-        System.out.println("first result: " + firstTask());
-        System.out.println("second result: " + secondTask());
+        System.out.println("first result: " + firstTaskId());
+        System.out.println("second result: " + secondTaskId());
     }
 
     private static String[] formatInput(String file){
@@ -24,10 +26,10 @@ public class Main {
 
     }
 
-    public static long firstTask(){
+    public static long firstTaskId(){
 
         long res = 0;
-        String[] input = formatInput("day-02/input.txt");
+        String[] input = formatInput("day02/input.txt");
 
         for(String s: input){
 
@@ -51,10 +53,10 @@ public class Main {
 
     }
 
-    public static long secondTask(){
+    public static long secondTaskId(){
         
         long res = 0;
-        String[] input = formatInput("day-02/input.txt");
+        String[] input = formatInput("day02/input.txt");
 
         for(String s: input){
         
